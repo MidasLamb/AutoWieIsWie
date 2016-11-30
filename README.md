@@ -14,3 +14,11 @@ Just run `python3 wie-is-wie.py` and the program will start running. It will che
 
 # Optimizations
 When your clipboard contains something that has no space in it, like a normal name would have, it will search the wie-is-wie with first-name and last-name as the content of your clipboard. If you wonder why this is, you don't know everything about wie-is-wie there is to know.
+
+When your clipboard contains spaces, it will search for every possible combination. E.g. Your clipboard contains **"Mark Jan Peeters"**, the wie-is-wie will be searched for: 
+* Mark Jan
+* Mark Peeters
+* Jan Mark
+* Jan Peeters
+* Peeters Mark
+* Peeters Jan
