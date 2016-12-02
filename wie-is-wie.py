@@ -50,8 +50,8 @@ def getWhoisWho(arr):
                 continue
             data= {
                 'lang': 'N',
-                'fnaam': arr[x],
-                'vnaam': arr[y],
+                'fnaam': "%" + arr[x] + "%",
+                'vnaam': "%" + arr[y] + "%",
                 }
             r = requests.post('http://cwisdb.kuleuven.be/studadm-bin/stududs.pl?lang=N', data=data)
             html = r.text
